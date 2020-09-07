@@ -14,15 +14,15 @@ public class Start {
         this.appUserRepo = appUserRepo;
 
         AppUser appUser = new AppUser();
-        appUser.setUsername("Janusz");
-        appUser.setPassword(passwordEncoder.encode("Janusz123"));
+        appUser.setUsername("admin");
+        appUser.setPassword(passwordEncoder.encode("admin123"));
         appUser.setRole("ROLE_ADMIN");
         appUser.setEnable(true);
         appUserRepo.save(appUser);
 
         AppUser appUser1 = new AppUser();
-        appUser1.setUsername("Bogdan");
-        appUser1.setPassword(passwordEncoder.encode("Bogdan123"));
+        appUser1.setUsername("user");
+        appUser1.setPassword(passwordEncoder.encode("user123"));
         appUser1.setRole("ROLE_USER");
         appUser1.setEnable(true);
         appUserRepo.save(appUser1);
